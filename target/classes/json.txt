@@ -1,0 +1,72 @@
+
+ 1) url:localhost:8080/user
+   method:POST
+   purpose:creation of user
+
+{
+  "adress": "UPPARAPALLE",
+  "createdDate": "2019-07-19T04:14:48.270Z",
+  "email": "csrn2222@gmail.com",
+  "mobileNo": 9703601903,
+  "name": "Narendra",
+  "password": "Csrn@406",
+  "updatedDate": "2019-07-19T04:14:48.271Z",
+  "userName": "csrn406",
+  "walletAmount": 0
+ 
+}
+
+
+ 2)url:localhost:8080/users
+ method:GET
+ purpose:Getting of users data
+ 
+ 3)url:localhost:8080/user/statement
+ method:POST
+ purpose:For creating json format
+ 
+ {
+	
+	"mobileNo":9703601903,
+	"password":"Csrn@406"
+}
+
+4)url:localhost:8080/user/{userId}
+ method:GET
+ purpose:for changing sataus of user
+ 
+ 5)url:localhost:8080/wallet/add
+ method:POST
+ purpose:For adding money to wallet
+ {
+  "amount": 10000,
+  "mobileNo": 9703601903,
+  "password": "Csrn@406"
+  
+}
+6)url:localhost:8080/wallet/deduct
+ method:POST
+ purpose:deduct money from wallet
+ {
+  "amount": 10000,
+  "mobileNo": 9703601903,
+  "password": "Csrn@406",
+  "purpose":"for cooldrinks"
+  
+}
+7)url:localhost:8080/user/UB00001
+ method:PUT
+ purpose:updating of user
+ {
+  "adress": "Bangalore",
+  "createdDate": "2019-07-19T04:14:48.270Z",
+  "email": "csrn2222@gmail.com",
+  "mobileNo": 9703601903,
+  "name": "Narendra",
+  "userId":"UB00001",
+  "password": "Csrn@406",
+  "updatedDate": "2019-07-19T04:14:48.271Z",
+  "userName": "csrn406",
+  "walletAmount": 0
+ 
+}
